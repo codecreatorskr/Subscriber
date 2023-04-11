@@ -1,0 +1,56 @@
+# thank U
+import turtle
+import time
+import random as r
+t = turtle.Turtle()
+time.sleep(2)
+t.speed(0)
+turtle.Screen().bgcolor("black")
+f = 60
+color = ["red", "white", "yellow", "blue", "orange"]
+for x in range(16):
+    c = r.choice(color)
+    t.color(c)
+    t.pencolor()
+    t.goto(0, 190)
+    t.pendown()
+    t.write("Thank You", align="center", font=("Arial", f, "bold"))
+    t.left(90)
+    t.penup()
+    t.goto(0, 40)
+    t.pendown()
+    t.write("101", align="center", font=("Arial", f, "bold"))
+    t.penup()
+    t.goto(0, -110)
+    t.pendown()
+    t.write("Subscribers", align="center", font=("Arial", f, "bold"))
+    f += 1
+t.penup()
+t.goto(0, -330)
+t.pendown()
+t.right(180)
+t.color("red")
+t.begin_fill()
+t.right(130)
+t.forward(133)
+t.circle(50, 200)
+t.right(140)
+t.circle(50, 200)
+t.forward(133)
+t.end_fill()
+
+t.pencolor("white")
+t.penup()
+t.goto(-65, -290)
+t.pendown()
+t.pensize(7)
+t.left(90)
+t.forward(240)
+t.left(150)
+t.forward(40)
+t.backward(40)
+t.left(60)
+t.forward(40)
+
+t.hideturtle()
+turtle.done()
